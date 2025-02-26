@@ -1,0 +1,394 @@
+[
+{
+        "centerId":"C1001",
+        "name":"PawHealth Veterinary Clinic",
+        "founder":"ravi",
+        "location":"https://www.google.com",
+        "phno":"6305402058",
+        "centerLocation":{ "latitude": "17.3616", "longitude": "78.4747" },
+        "Clinics":[
+            [{
+                "id":"C1D001",
+                "doctorName":"kamali",
+                "image":"./assets/images/dayCareNearYou.png",
+                "doctorImage":"https://media.istockphoto.com/id/1369995577/photo/cat-and-dog-in-vet-doctor-hands-doctor-veterinarian-keeps-kitten-and-puppy-in-hands-in-white.jpg?s=1024x1024&w=is&k=20&c=C4zszzex-9_FoAd_hIUqMtrAAkxiqZ9FhlG6gDPUZ-g="
+        },
+       {
+                "id":"C1D002",
+                "doctorName":"ravi",
+                "image":"./assets/images/dayCareNearYou.png",
+                "doctorImage":"https://media.istockphoto.com/id/1162639281/photo/very-happy-veterinarian-getting-a-kiss-from-a-dog.jpg?s=612x612&w=0&k=20&c=WkWRTEuL5k8sMAktaeV-_eqdO6B7HWNwJCBq-8botaE="
+        },
+       {
+            "id":"C1D003",
+            "doctorName":"arthi",
+            "image":"./assets/images/dayCareNearYou.png",
+            "doctorImage":"https://media.istockphoto.com/id/489083722/photo/happy-doctor-with-dog-at-vet-clinic.jpg?s=612x612&w=0&k=20&c=9B4np-JRQC0-t1uPCI_e2pmEwIkt-A6JF-6xrG05xSE="
+    }],
+    
+    [
+            {
+                "id":"C1C001",
+                "doctorName":"madhav",
+                "image":"./assets/catClinic.webp",
+                "doctorImage":"https://media.istockphoto.com/id/1435554782/photo/a-young-male-vet-examining-a-kitten.jpg?s=612x612&w=0&k=20&c=YZPralFmrGzC0kvh4S4ZfkiA0DbbjT5hR-xEe3rj5Wo="
+            },
+            {
+                "id":"C1C002",
+                "doctorName":"mani",
+                "image":"./assets/catClinic.webp",
+                "doctorImage":"https://media.istockphoto.com/id/1435555882/photo/a-young-female-vet-examining-a-kitten.jpg?s=612x612&w=0&k=20&c=bbqRo2lUHdkr6VrQxwIROjBrODMjthCHN678uJOV2hk="
+            },
+            {
+                "id":"C1C003",
+                "doctorName":"manoj",
+                "image":"./assets/catClinic.webp",
+                "doctorImage":"https://media.istockphoto.com/id/1435556113/photo/a-young-female-vet-holding-a-kitten.jpg?s=1024x1024&w=is&k=20&c=4NznpIb6UNbnR56poDkgj_Hs3qHo1W-3OebW4JOCgBw="
+            }],
+    
+    [
+        {
+            "id":"C1R001",
+            "doctorName":"mahathi",
+            "image":"./assets/rabbitClinic.webp",
+            "doctorImage":"https://media.istockphoto.com/id/1130636356/photo/sunset-over-mountain-with-cosmos-blooming.jpg?s=612x612&w=0&k=20&c=0fK0C07rR3kqX4C9PLhqNjxSs6d6vSTMPTkPlD-CybQ="
+
+        },
+        {
+            "id":"C1R002",
+            "doctorName":"sujatha",
+            "image":"./assets/rabbitClinic.webp",
+            "doctorImage":"https://media.istockphoto.com/id/1294416926/photo/isolated-blue-anemone-flower-on-white-background.jpg?s=612x612&w=0&k=20&c=iOVkqJo5v32V9tjaLUIE4sHnGL0thlt6ufo8NKQVv0o="
+
+        },
+        {
+            "id":"C1R003",
+            "doctorName":"suneetha",
+            "image":"./assets/rabbitClinic.webp",
+            "doctorImage":"https://media.istockphoto.com/id/184624919/photo/chrysanthemum.jpg?s=1024x1024&w=is&k=20&c=M4GWV33j5xtcglf11K9MEdlqTOywCcbzb9BuThDjWSY="
+
+        }
+        
+    
+    ],
+    [
+        {
+            "id":"C1P001",
+            "doctorName":"pavani",
+            "image":"./assets/parrotClinic.webp",
+            "doctorImage":"https://media.istockphoto.com/id/1068523140/photo/scarlet-macaw-flying-in-nature.jpg?s=612x612&w=0&k=20&c=sO2QP4lni1QC-tqll05ZmkgVm5a2tV0ovgfZggv7I3g="
+
+        },
+        {
+            "id":"C1P002",
+            "doctorName":"pavithra",
+            "image":"./assets/parrotClinic.webp",
+            "doctorImage":"https://media.istockphoto.com/id/1256734929/photo/flying-parrot.jpg?s=612x612&w=0&k=20&c=OixTmik-H6ZdGAYm3h25B9i2Iv7jKmPhA8flMfQWJRo="
+
+        },
+       {
+            "id":"C1P003",
+            "doctorName":"sravani",
+            "image":"./assets/parrotClinic.webp",
+            "doctorImage":"https://media.istockphoto.com/id/1286299968/photo/green-winged-macaw.jpg?s=612x612&w=0&k=20&c=1TihLDdhsIdkcheZsSaRA6sEwWWgsW6w5t3rf1Iart4="
+
+        }
+    ]
+]
+},
+{
+    "centerId":"C2002",
+    "name":"PawHealth Veterinary Clinic",
+    "founder":"ravi",
+    "location":"https://www.google.com",
+    "phno":"6305402058",
+    "centerLocation":{ "latitude": "17.3833", "longitude": "78.4011" },
+    "Clinics":[
+        [{
+            "id":"C2D001",
+            "doctorName":"kamali",
+            "image":"./assets/images/dayCareNearYou.png",
+            "doctorImage":"https://media.istockphoto.com/id/1369995577/photo/cat-and-dog-in-vet-doctor-hands-doctor-veterinarian-keeps-kitten-and-puppy-in-hands-in-white.jpg?s=1024x1024&w=is&k=20&c=C4zszzex-9_FoAd_hIUqMtrAAkxiqZ9FhlG6gDPUZ-g="
+    },
+   {
+            "id":"C2D002",
+            "doctorName":"ravi",
+            "image":"./assets/images/dayCareNearYou.png",
+            "doctorImage":"https://media.istockphoto.com/id/1162639281/photo/very-happy-veterinarian-getting-a-kiss-from-a-dog.jpg?s=612x612&w=0&k=20&c=WkWRTEuL5k8sMAktaeV-_eqdO6B7HWNwJCBq-8botaE="
+    },
+    {
+        "id":"C2D003",
+        "doctorName":"arthi",
+        "image":"./assets/images/dayCareNearYou.png",
+        "doctorImage":"https://media.istockphoto.com/id/489083722/photo/happy-doctor-with-dog-at-vet-clinic.jpg?s=612x612&w=0&k=20&c=9B4np-JRQC0-t1uPCI_e2pmEwIkt-A6JF-6xrG05xSE="
+}
+        ],
+
+[
+        {
+            "id":"C2C001",
+            "doctorName":"madhav",
+            "image":"./assets/catClinic.webp",
+            "doctorImage":"https://media.istockphoto.com/id/1435554782/photo/a-young-male-vet-examining-a-kitten.jpg?s=612x612&w=0&k=20&c=YZPralFmrGzC0kvh4S4ZfkiA0DbbjT5hR-xEe3rj5Wo="
+        },
+        {
+            "id":"C2C002",
+            "doctorName":"mani",
+            "image":"./assets/catClinic.webp",
+            "doctorImage":"https://media.istockphoto.com/id/1435555882/photo/a-young-female-vet-examining-a-kitten.jpg?s=612x612&w=0&k=20&c=bbqRo2lUHdkr6VrQxwIROjBrODMjthCHN678uJOV2hk="
+        },
+        {
+            "id":"C2C003",
+            "doctorName":"manoj",
+            "image":"./assets/catClinic.webp",
+            "doctorImage":"https://media.istockphoto.com/id/1435556113/photo/a-young-female-vet-holding-a-kitten.jpg?s=1024x1024&w=is&k=20&c=4NznpIb6UNbnR56poDkgj_Hs3qHo1W-3OebW4JOCgBw="
+        }
+    ],
+[
+    {
+        "id":"C2R001",
+        "doctorName":"mahathi",
+        "image":"./assets/rabbitClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/1130636356/photo/sunset-over-mountain-with-cosmos-blooming.jpg?s=612x612&w=0&k=20&c=0fK0C07rR3kqX4C9PLhqNjxSs6d6vSTMPTkPlD-CybQ="
+
+    },
+    {
+        "id":"C2R002",
+        "doctorName":"sujatha",
+        "image":"./assets/rabbitClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/1294416926/photo/isolated-blue-anemone-flower-on-white-background.jpg?s=612x612&w=0&k=20&c=iOVkqJo5v32V9tjaLUIE4sHnGL0thlt6ufo8NKQVv0o="
+
+    },
+   {
+        "id":"C2R003",
+        "doctorName":"suneetha",
+        "image":"./assets/rabbitClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/184624919/photo/chrysanthemum.jpg?s=1024x1024&w=is&k=20&c=M4GWV33j5xtcglf11K9MEdlqTOywCcbzb9BuThDjWSY="
+
+    }
+    
+
+],
+[
+    {
+        "id":"C2P001",
+        "doctorName":"pavani",
+        "image":"./assets/parrotClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/1068523140/photo/scarlet-macaw-flying-in-nature.jpg?s=612x612&w=0&k=20&c=sO2QP4lni1QC-tqll05ZmkgVm5a2tV0ovgfZggv7I3g="
+
+    },
+    {
+        "id":"C2P002",
+        "doctorName":"pavithra",
+        "image":"./assets/parrotClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/1256734929/photo/flying-parrot.jpg?s=612x612&w=0&k=20&c=OixTmik-H6ZdGAYm3h25B9i2Iv7jKmPhA8flMfQWJRo="
+
+    },
+    {
+        "id":"C2P003",
+        "doctorName":"sravani",
+        "image":"./assets/parrotClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/1286299968/photo/green-winged-macaw.jpg?s=612x612&w=0&k=20&c=1TihLDdhsIdkcheZsSaRA6sEwWWgsW6w5t3rf1Iart4="
+
+    }
+  ]
+    ]
+},
+{
+    "centerId":"C3003",
+    "name":"PawHealth Veterinary Clinic",
+    "founder":"ravi",
+    "location":"https://www.google.com",
+    "phno":"6305402058",
+    "centerLocation": {"latitude": "17.4239", "longitude": "78.4738" },
+    "Clinics":[[
+        {
+            "id":"C3D001",
+            "doctorName":"kamali",
+            "image":"./assets/images/dayCareNearYou.png",
+            "doctorImage":"https://media.istockphoto.com/id/1369995577/photo/cat-and-dog-in-vet-doctor-hands-doctor-veterinarian-keeps-kitten-and-puppy-in-hands-in-white.jpg?s=1024x1024&w=is&k=20&c=C4zszzex-9_FoAd_hIUqMtrAAkxiqZ9FhlG6gDPUZ-g="
+    },
+    {
+            "id":"C3D002",
+            "doctorName":"ravi",
+            "image":"./assets/images/dayCareNearYou.png",
+            "doctorImage":"https://media.istockphoto.com/id/1162639281/photo/very-happy-veterinarian-getting-a-kiss-from-a-dog.jpg?s=612x612&w=0&k=20&c=WkWRTEuL5k8sMAktaeV-_eqdO6B7HWNwJCBq-8botaE="
+    },
+    {
+        "id":"C3D003",
+        "doctorName":"arthi",
+        "image":"./assets/images/dayCareNearYou.png",
+        "doctorImage":"https://media.istockphoto.com/id/489083722/photo/happy-doctor-with-dog-at-vet-clinic.jpg?s=612x612&w=0&k=20&c=9B4np-JRQC0-t1uPCI_e2pmEwIkt-A6JF-6xrG05xSE="
+}
+    ],
+[
+         {
+            "id":"C3C001",
+            "doctorName":"madhav",
+            "image":"./assets/catClinic.webp",
+            "doctorImage":"https://media.istockphoto.com/id/1435554782/photo/a-young-male-vet-examining-a-kitten.jpg?s=612x612&w=0&k=20&c=YZPralFmrGzC0kvh4S4ZfkiA0DbbjT5hR-xEe3rj5Wo="
+        },
+        {
+            "id":"C3C002",
+            "doctorName":"mani",
+            "image":"./assets/catClinic.webp",
+            "doctorImage":"https://media.istockphoto.com/id/1435555882/photo/a-young-female-vet-examining-a-kitten.jpg?s=612x612&w=0&k=20&c=bbqRo2lUHdkr6VrQxwIROjBrODMjthCHN678uJOV2hk="
+        },
+        {
+            "id":"C3C003",
+            "doctorName":"manoj",
+            "image":"./assets/catClinic.webp",
+            "doctorImage":"https://media.istockphoto.com/id/1435556113/photo/a-young-female-vet-holding-a-kitten.jpg?s=1024x1024&w=is&k=20&c=4NznpIb6UNbnR56poDkgj_Hs3qHo1W-3OebW4JOCgBw="
+        }
+    ],
+
+[
+    {
+        "id":"C3R001",
+        "doctorName":"mahathi",
+        "image":"./assets/rabbitClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/1130636356/photo/sunset-over-mountain-with-cosmos-blooming.jpg?s=612x612&w=0&k=20&c=0fK0C07rR3kqX4C9PLhqNjxSs6d6vSTMPTkPlD-CybQ="
+
+    },
+    {
+        "id":"C3R002",
+        "doctorName":"sujatha",
+        "image":"./assets/rabbitClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/1294416926/photo/isolated-blue-anemone-flower-on-white-background.jpg?s=612x612&w=0&k=20&c=iOVkqJo5v32V9tjaLUIE4sHnGL0thlt6ufo8NKQVv0o="
+
+    },
+    {
+        "id":"C3R003",
+        "doctorName":"suneetha",
+        "image":"./assets/rabbitClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/184624919/photo/chrysanthemum.jpg?s=1024x1024&w=is&k=20&c=M4GWV33j5xtcglf11K9MEdlqTOywCcbzb9BuThDjWSY="
+
+    }
+    
+
+],
+[
+    {
+        "id":"C3P001",
+        "doctorName":"pavani",
+        "image":"./assets/parrotClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/1068523140/photo/scarlet-macaw-flying-in-nature.jpg?s=612x612&w=0&k=20&c=sO2QP4lni1QC-tqll05ZmkgVm5a2tV0ovgfZggv7I3g="
+
+    },
+    {
+        "id":"C3P002",
+        "doctorName":"pavithra",
+        "image":"./assets/parrotClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/1256734929/photo/flying-parrot.jpg?s=612x612&w=0&k=20&c=OixTmik-H6ZdGAYm3h25B9i2Iv7jKmPhA8flMfQWJRo="
+
+    },
+    {
+        "id":"C3P003",
+        "doctorName":"sravani",
+        "image":"./assets/parrotClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/1286299968/photo/green-winged-macaw.jpg?s=612x612&w=0&k=20&c=1TihLDdhsIdkcheZsSaRA6sEwWWgsW6w5t3rf1Iart4="
+
+    }
+]]
+},
+ 
+{
+    "centerId":"C4004",
+    "name":"PawHealth Veterinary Clinic",
+    "founder":"ravi",
+    "location":"https://www.google.com",
+    "phno":"6305402058",
+   "centerLocation":{ "latitude": "17.2543", "longitude": "78.6829" },
+    "Clinics":[[
+        {
+            "id":"C4D001",
+            "doctorName":"kamali",
+            "image":"./assets/images/dayCareNearYou.png",
+            "doctorImage":"https://media.istockphoto.com/id/1369995577/photo/cat-and-dog-in-vet-doctor-hands-doctor-veterinarian-keeps-kitten-and-puppy-in-hands-in-white.jpg?s=1024x1024&w=is&k=20&c=C4zszzex-9_FoAd_hIUqMtrAAkxiqZ9FhlG6gDPUZ-g="
+    },
+    {
+            "id":"C4D002",
+            "doctorName":"ravi",
+            "image":"./assets/images/dayCareNearYou.png",
+            "doctorImage":"https://media.istockphoto.com/id/1162639281/photo/very-happy-veterinarian-getting-a-kiss-from-a-dog.jpg?s=612x612&w=0&k=20&c=WkWRTEuL5k8sMAktaeV-_eqdO6B7HWNwJCBq-8botaE="
+    },
+   {
+        "id":"C4D003",
+        "doctorName":"arthi",
+        "image":"./assets/images/dayCareNearYou.png",
+        "doctorImage":"https://media.istockphoto.com/id/489083722/photo/happy-doctor-with-dog-at-vet-clinic.jpg?s=612x612&w=0&k=20&c=9B4np-JRQC0-t1uPCI_e2pmEwIkt-A6JF-6xrG05xSE="
+}
+    ],
+
+[
+      {
+            "id":"C4C001",
+            "doctorName":"madhav",
+            "image":"./assets/catClinic.webp",
+            "doctorImage":"https://media.istockphoto.com/id/1435554782/photo/a-young-male-vet-examining-a-kitten.jpg?s=612x612&w=0&k=20&c=YZPralFmrGzC0kvh4S4ZfkiA0DbbjT5hR-xEe3rj5Wo="
+        },
+        {
+            "id":"C4C002",
+            "doctorName":"mani",
+            "image":"./assets/catClinic.webp",
+            "doctorImage":"https://media.istockphoto.com/id/1435555882/photo/a-young-female-vet-examining-a-kitten.jpg?s=612x612&w=0&k=20&c=bbqRo2lUHdkr6VrQxwIROjBrODMjthCHN678uJOV2hk="
+        },
+        {
+            "id":"C4C003",
+            "doctorName":"manoj",
+            "image":"./assets/catClinic.webp",
+            "doctorImage":"https://media.istockphoto.com/id/1435556113/photo/a-young-female-vet-holding-a-kitten.jpg?s=1024x1024&w=is&k=20&c=4NznpIb6UNbnR56poDkgj_Hs3qHo1W-3OebW4JOCgBw="
+        }
+    ],
+
+[
+    {
+        "id":"C4R001",
+        "doctorName":"mahathi",
+        "image":"./assets/rabbitClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/1130636356/photo/sunset-over-mountain-with-cosmos-blooming.jpg?s=612x612&w=0&k=20&c=0fK0C07rR3kqX4C9PLhqNjxSs6d6vSTMPTkPlD-CybQ="
+
+    },
+    {
+        "id":"C4R002",
+        "doctorName":"sujatha",
+        "image":"./assets/rabbitClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/1294416926/photo/isolated-blue-anemone-flower-on-white-background.jpg?s=612x612&w=0&k=20&c=iOVkqJo5v32V9tjaLUIE4sHnGL0thlt6ufo8NKQVv0o="
+
+    },
+    {
+        "id":"C4R003",
+        "doctorName":"suneetha",
+        "image":"./assets/rabbitClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/184624919/photo/chrysanthemum.jpg?s=1024x1024&w=is&k=20&c=M4GWV33j5xtcglf11K9MEdlqTOywCcbzb9BuThDjWSY="
+
+    }
+],
+    
+
+
+[
+    {
+        "id":"C4P001",
+        "doctorName":"pavani",
+        "image":"./assets/parrotClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/1068523140/photo/scarlet-macaw-flying-in-nature.jpg?s=612x612&w=0&k=20&c=sO2QP4lni1QC-tqll05ZmkgVm5a2tV0ovgfZggv7I3g="
+
+    },
+    {
+        "id":"C4P002",
+        "doctorName":"pavithra",
+        "image":"./assets/parrotClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/1256734929/photo/flying-parrot.jpg?s=612x612&w=0&k=20&c=OixTmik-H6ZdGAYm3h25B9i2Iv7jKmPhA8flMfQWJRo="
+
+    },
+    {
+        "id":"C4P003",
+        "doctorName":"sravani",
+        "image":"./assets/parrotClinic.webp",
+        "doctorImage":"https://media.istockphoto.com/id/1286299968/photo/green-winged-macaw.jpg?s=612x612&w=0&k=20&c=1TihLDdhsIdkcheZsSaRA6sEwWWgsW6w5t3rf1Iart4="
+
+    }
+ ]]
+}
+]
