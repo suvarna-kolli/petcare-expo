@@ -66,6 +66,7 @@ input:{
     width:"100%",
     textAlign:"center",
     fontSize:16,
+    paddingVertical:10,
 
 },
 signInButton:{

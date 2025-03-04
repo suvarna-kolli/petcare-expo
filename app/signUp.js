@@ -47,6 +47,7 @@ input:{
     borderWidth:2,
     borderColor:"#93939340",
     borderRadius:14,
+    paddingVertical:10,
     width:"100%",
     textAlign:"center",
     fontSize:16,

@@ -30,7 +30,7 @@ export const PetCentersScreen = () => {
   const [reportError,setReportError]=useState('')
 
   const reportData=useSelector((state)=>state.reports)
-  console.log(reportData)
+
 
   const dispatch=useDispatch();
   useEffect(() => {
@@ -39,7 +39,7 @@ export const PetCentersScreen = () => {
         const data = clinicsData; // Replace with actual fetch call if needed
         setGlobalData(data);
   
-        console.log('Data loaded successfully:', data);
+       
       } catch (error) {
         console.error('Error loading data:', error);
       }
@@ -77,12 +77,12 @@ const requestLocationPermission = async () => {
         const { coords } = await Location.getCurrentPositionAsync({
           accuracy: Location.Accuracy.Low,
         });
-        console.log('Position:', coords);
+      
         setLocation(coords);
         
 
       } catch (error) {
-        console.log('Error:', error);
+       
         setErrorMsg(error.message);
       }
     };

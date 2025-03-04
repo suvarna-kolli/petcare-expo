@@ -17,10 +17,10 @@ const ClinicsList = ({ navigation, route }) => {
     const [petBreed, setPetBreed] = useState(0);
     const { item } = route.params;
     const centerData=item;
-    console.log(centerData)
+    
     const centerName=centerData.name
     const location=centerData.centerLocation
-    console.log(petBreed)
+  
 
     return (
        

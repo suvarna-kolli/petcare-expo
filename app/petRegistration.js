@@ -83,6 +83,9 @@ if (!result.canceled) {
     setSize(0)
     setWeight(0)
     setVaccineHist('')
+
+
+    navigation.navigate('home')
   }
  
  

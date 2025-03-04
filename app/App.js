@@ -50,7 +50,8 @@ import CartContextProvider from './contexts/cartContext.js'
 import CartScreen from './cartScreen.js'
 import AddressConfirmationScreen from './address.js'
 import PaymentScreen from './payment.js'
-
+import userIcon from './assets/images/userIcon.png'
+import  {ProfileScreen,MyPetsScreen,PastAppointmentsScreen,ManageOrdersScreen,LogoutScreen} from './drawerScreens.js'
 
 const Stack=createNativeStackNavigator()
 export const loadData=[
@@ -244,19 +245,73 @@ const BottomTabNavigator=()=>{
       )
   }
 
-
-
-
+ 
 
 const Drawer = createDrawerNavigator();
 const DrawerNavigator=({navigation})=>{
     return (
         <>
-          <Drawer.Navigator initialRouteName='temp' >
+          <Drawer.Navigator initialRouteName='Home' >
           
-            <Drawer.Screen name="temp" component={BottomTabNavigator} options={{headerShown:false}}></Drawer.Screen>
-            <Drawer.Screen name="Settings" component={SettingsScreen} />
-            <Drawer.Screen name="articles" component={ArticlesScreen} 
+            <Drawer.Screen name="Home" component={BottomTabNavigator} 
+                     options={{
+                      headerShown: false,
+                      drawerLabel: () => (
+                        <View style={styles.drawerItem}>
+                         <View style={{backgroundColor:'#909c98',borderRadius:50, marginRight: 10,}}>
+                           <Image
+                            source={userIcon} // Replace with your image path
+                            style={styles.drawerImage}
+                          /></View>
+                          <Text style={styles.drawerText}>Stewie Griffin</Text>
+                        </View>
+                      ),
+                    }}
+            ></Drawer.Screen>
+
+<Drawer.Screen name="Profile" component={ProfileScreen} 
+              options={{
+                drawerIcon: ({ color, size }) => (
+                  <FeatherIcon name="user" color={color} size={size} />
+                ),
+              }}/>
+
+<Drawer.Screen name="My Pets" component={MyPetsScreen} 
+              options={{
+                drawerIcon: ({ color, size }) => (
+                  <ComIcon name="cat" color={color} size={size} />
+                ),
+              }}/>
+
+<Drawer.Screen name="Past Appointments" component={PastAppointmentsScreen} 
+              options={{
+                drawerIcon: ({ color, size }) => (
+                  <ComIcon name="calendar-month-outline" color={color} size={size} />
+                ),
+              }}/>
+
+<Drawer.Screen name="Manage Orders" component={ManageOrdersScreen} 
+              options={{
+                drawerIcon: ({ color, size }) => (
+                  <ComIcon name="cube-outline" color={color} size={size} />
+                ),
+              }}/>
+
+            <Drawer.Screen name="Settings" component={SettingsScreen} 
+              options={{
+                drawerIcon: ({ color, size }) => (
+                  <Icon name="settings" color={color} size={size} />
+                ),
+              }}/>
+
+<Drawer.Screen name="Logout" component={LogoutScreen} 
+              options={{
+              
+                drawerIcon: ({ color, size }) => (
+                  <FeatherIcon name="log-out" color={color} size={size} />
+                ),
+              }}/>
+            {/* <Drawer.Screen name="articles" component={ArticlesScreen} 
                       options={{
                         headerTitle:()=>(
                            <View style={{ flex: 1, flexDirection: 'row',alignItems:"center",justifyContent:"center",width:"100%",paddingLeft:20}}>
@@ -267,7 +322,7 @@ const DrawerNavigator=({navigation})=>{
                         )
                      }
                      }
-                     />
+                     /> */}
 
           </Drawer.Navigator>
           </>
@@ -332,7 +387,23 @@ const styles=StyleSheet.create({
   AddPetHead:{
    flex:1,
     flexDirection:"row",
-  }
+  },
+  drawerItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  
+  },
+  drawerImage: {
+    width: 60,
+    height: 60,
+    borderRadius: 50, // Make it circular
+  
+  },
+  drawerText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#000', // Customize the text color
+  },
 
 })
 

@@ -3,11 +3,11 @@ import { View, Text, Image, StyleSheet, ScrollView ,TouchableOpacity} from 'reac
 import {useContext} from 'react'
 import { cartContext } from './contexts/cartContext';
 import { FlatList } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+
 
 const CartScreen=({navigation})=>{
     const {addToCart,removeFromCart,removeEntireItem,cart}=useContext(cartContext)
-    console.log(cart)
+   
 
 const uniqueData=(cart)=>{
  
@@ -107,9 +107,11 @@ const CountOfItems = (item, cart) => {
           </View>
         }
       />
+           <View style={Styles.continueContainer}>
             <TouchableOpacity style={[Styles.continueButton,{marginTop:20}]} onPress={()=>navigation.navigate('Address')}  >
                    <Text style={{fontSize:18,color:"#fff",textAlign:"center"}}>Place Order</Text>
                </TouchableOpacity>
+               </View>
     </View>
   );
 }

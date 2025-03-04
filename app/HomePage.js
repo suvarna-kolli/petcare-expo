@@ -139,7 +139,7 @@ export function HomeScreen({ navigation }) {
   const {submitData,addPetToList}=useContext(AddpetContext)
   const [seeAll,setSeeAll]=useState(false)
   const renderPetDetails=({item})=>{
-    console.log(item.image)
+   
       return (
        
       <View style={{ width: 100, height: 100,borderRadius:14, margin:15,justifyContent:"center",}}>
@@ -329,12 +329,12 @@ export function HomeScreen({ navigation }) {
         const { coords } = await Location.getCurrentPositionAsync({
           accuracy: Location.Accuracy.Low,
         });
-        console.log('Position:', coords);
+       
         setLocation(coords);
 
 
       } catch (error) {
-        console.log('Error:', error);
+     
         setErrorMsg(error.message);
       }
     };

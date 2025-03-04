@@ -53,7 +53,7 @@ const ShoppingScreen=({navigation})=>{
                             <TouchableOpacity onPress={() => {  setPetName(item.name); }}
                             style={[styles.clinicButtons,{borderColor:"grey",paddingVertical:10},petName===item.name &&{backgroundColor:"#64867B"}]}>
                                 <Text style={[petName===item.name &&{color:"#fff"}]}>{item.name}</Text>
-                               { console.log(data)}
+                               
                             </TouchableOpacity>
                         )}
                     />
