@@ -6,9 +6,17 @@ import phonePeIcon from './assets/images/phonePeIcon.png'
 import paytmIcon from './assets/images/paytmIcon.png'
 import creditCard from './assets/images/creditCard.png'
 import netBanking from './assets/images/netBanking.png'
+import { ScrollView } from 'react-native-gesture-handler';
+import { KeyboardAvoidingView ,Platform} from 'react-native';
 const PaymentScreen=({navigation})=>{
     return(
-        <View style={{flex:1}}>
+      
+        <KeyboardAvoidingView
+                    behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+                    style={{ flex: 1 }}
+                  >
+        <View style={{flex:1}}> 
+          <ScrollView style={{height:"83%"}}>
             <Text style={{marginLeft:20,fontWeight:500,fontSize:18,marginTop:20}}>Recommended</Text>
         <View style={[styles.container,{height:160,padding:0}]}>
         <View style={styles.queryContainer}>
@@ -59,12 +67,14 @@ const PaymentScreen=({navigation})=>{
         </View>
 
        </View>
+       </ScrollView>
          <View style={styles.continueContainer}>
-               <TouchableOpacity style={[styles.continueButton,{marginTop:20}]} onPress={()=>navigation.navigate('orderConfirm')}  >
+               <TouchableOpacity style={[styles.continueButton]} onPress={()=>navigation.navigate('orderConfirm')}  >
                            <Text style={{fontSize:18,color:"#fff",textAlign:"center"}}>Pay Now</Text>
                        </TouchableOpacity>
                        </View>
        </View>
+       </KeyboardAvoidingView>
     )
 }
 
@@ -111,8 +121,7 @@ const styles = StyleSheet.create({
 
  
     continueContainer: {
-        position: "absolute",  
-        bottom:50, 
+
         width: "100%", 
         padding: 10,
         backgroundColor: "#fff",

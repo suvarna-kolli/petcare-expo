@@ -3,11 +3,12 @@ import { View, Text, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const ConfirmationScreen=({navigation})=>{
-    useEffect(()=>{
-        setTimeout(()=>{
-          navigation.navigate('home')
-        },3000)
-    },[])
+    // useEffect(()=>{
+    //     setTimeout(()=>{
+    //       navigation.navigate('home)
+       
+    //     },3000)
+    // },[])
     return (
         <View style={{flex:1,justifyContent:"center",alignItems:"center"}}>
         <View style={styles.container}>

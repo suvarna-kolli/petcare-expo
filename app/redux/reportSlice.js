@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { configureStore } from '@reduxjs/toolkit';
 
 const reportsSlice = createSlice({
-  name: 'reports',
+  name: 'reports',  
   initialState: [], 
   reducers: {
 

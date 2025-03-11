@@ -10,7 +10,7 @@ export default function DetailsScreen({navigation, route }) {
   // Generate random description if not available
 
   return (
-    <ScrollView contentContainerStyle={styles.container}> 
+    <ScrollView contentContainerStyle={{height:"90%"}}> 
     
      <View style={{width:"100%",height:300,alignItems:"center",justifyContent:"space-evenly"}}>
      <Image source={{uri:item.featured_image}} resizeMode="stretch" style={styles.image}></Image> 

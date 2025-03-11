@@ -1,9 +1,17 @@
 import EvilIcon from '@expo/vector-icons/EvilIcons'
 import { TouchableOpacity,View,Text,Image,StyleSheet} from 'react-native';
 import capImage from './assets/images/cap.png'
+import { ScrollView } from 'react-native-gesture-handler';
+import { KeyboardAvoidingView ,Platform} from 'react-native';
+import React from 'react';
 const AddressConfirmationScreen=({navigation})=>{
     return(
+            <KeyboardAvoidingView
+              behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+              style={{ flex: 1 }}
+            >
         <View style={{flex:1}}>
+        <ScrollView contentContainerStyle={{paddingBottom:100}}>
         <View style={[Styles.container,{alignItems:"flex-start",justifyContent:"space-evenly",marginBottom:20}]}>
             <Text style={{color:"#64867B",fontSize:16}}>Stewie Griffin</Text>
             <Text style={[Styles.text,]}><EvilIcon name="location" size={20} color="grey"></EvilIcon>123 Bark Street, Canine City, PA 10101</Text>
@@ -22,12 +30,14 @@ const AddressConfirmationScreen=({navigation})=>{
             <Text style={Styles.priceText}>Order ID - 561681</Text>
         </View>
        </View>
+       </ScrollView>
        <View style={Styles.continueContainer}>
        <TouchableOpacity style={[Styles.continueButton,{marginTop:20}]} onPress={()=>navigation.navigate('payment')}  >
                    <Text style={{fontSize:18,color:"#fff",textAlign:"center"}}>Continue</Text>
                </TouchableOpacity>
                </View>
         </View>
+        </KeyboardAvoidingView>
     )
 }
 
@@ -64,10 +74,9 @@ const Styles=StyleSheet.create({
 
  
     continueContainer: {
-        position: "absolute",  
-        bottom:50, 
+        position:"absolute",
+        bottom:0,
         width: "100%", 
-       
         backgroundColor: "#fff",
     },
 })

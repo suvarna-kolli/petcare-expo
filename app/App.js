@@ -52,6 +52,7 @@ import AddressConfirmationScreen from './address.js'
 import PaymentScreen from './payment.js'
 import userIcon from './assets/images/userIcon.png'
 import  {ProfileScreen,MyPetsScreen,PastAppointmentsScreen,ManageOrdersScreen,LogoutScreen} from './drawerScreens.js'
+import * as LocalAuthentication from 'expo-local-authentication';
 
 const Stack=createNativeStackNavigator()
 export const loadData=[
@@ -101,17 +102,17 @@ const StackNavigation=()=>{
  
     ></Stack.Screen>
     <Stack.Screen name='addPetForm' component={addPetForm}
-     options={{ 
-      headerTitle:({navigation})=>(
-        <View style={{ flex: 1, flexDirection: 'row',alignItems:"center",justifyContent:"center",width:"100%",paddingLeft:20}}>
-         <TouchableOpacity onPress={()=>{
-         }} >
-         <Icon name="chevron-back-outline" size={25} style={{position:"relative",left:-140}}></Icon>
-         </TouchableOpacity>
-         <Text style={{fontWeight:500,fontSize:18,marginLeft:-40}}>Add pet</Text>
-        </View>
-      )
-    }}
+    //  options={{ 
+    //   headerTitle:({navigation})=>(
+    //     <View style={{ flex: 1, flexDirection: 'row',alignItems:"center",justifyContent:"center",width:"100%",paddingLeft:20}}>
+    //      <TouchableOpacity onPress={()=>{
+    //      }} >
+    //      <Icon name="chevron-back-outline" size={25} style={{position:"relative",left:-140}}></Icon>
+    //      </TouchableOpacity>
+    //      <Text style={{fontWeight:500,fontSize:18,marginLeft:-40}}>Add pet</Text>
+    //     </View>
+    //   )
+    // }}
     ></Stack.Screen>
     <Stack.Screen name='centerSelect'  component={PetCentersScreen}></Stack.Screen>
     <Stack.Screen name='clinics'  component={ClinicsList}></Stack.Screen>
@@ -335,9 +336,32 @@ const DrawerNavigator=({navigation})=>{
 
 const startScreen=({navigation})=>{
   useEffect(()=>{
+
+    const authenticateWithFingerprint = async () => {
+      const isBiometricSupported = await LocalAuthentication.hasHardwareAsync() && await LocalAuthentication.isEnrolledAsync();
+  
+      if (!isBiometricSupported) {
+        Alert.alert('Biometric authentication is not supported or no biometric data is enrolled.');
+        return;
+      }
+  
+      const result = await LocalAuthentication.authenticateAsync({
+        promptMessage: 'Authenticate to access the app',
+        fallbackLabel: 'Use Passcode', // Only for iOS
+      });
+  
+      if (result.success) {
+        Alert.alert('Authentication successful!');
+        // Proceed to the next screen or perform an action
+      } else {
+        Alert.alert('Authentication failed or canceled.');
+      }
+    };
+    authenticateWithFingerprint();
+
     const id=setTimeout(()=>{
         navigation.navigate('load',loadData[0]) 
-    },1000)
+    },3000)
 
 },[navigation])
   return (

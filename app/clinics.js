@@ -24,7 +24,7 @@ const ClinicsList = ({ navigation, route }) => {
 
     return (
        
-        <View Style={{marginBottom:50}}>
+        <View Style={{marginbottom:0}}>
             <FlatList
                 keyExtractor={(item) =>item.name}
                 data={submitData}

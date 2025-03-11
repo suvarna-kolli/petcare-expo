@@ -2,7 +2,9 @@ import { View ,Text,Image,StyleSheet,TouchableOpacity} from "react-native"
 import {useState} from 'react'
 import EvilIcon from '@expo/vector-icons/EvilIcons'
 
-import { SafeAreaView } from "react-native-safe-area-context";
+import { KeyboardAvoidingView } from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
+import { Platform } from "react-native";
 
 export const CancelAppointmet=({navigation,route})=>{
     const {centerData,item,petName,date,slot}=route.params
@@ -18,11 +20,15 @@ export const CancelAppointmet=({navigation,route})=>{
           hour: '2-digit', 
           minute: '2-digit', 
           hour12: true 
-        }).replace(" ", ""); // Remove space before AM/PM
+        }).replace(" ", ""); 
       };
     return(
-        <SafeAreaView>
-        <View style={styles.container}>
+     
+      <KeyboardAvoidingView
+      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+      style={{ flex: 1 }}
+    >
+        <View style={[styles.container,{flex:1}]}>
             <Text style={{color:"#ff0000",fontSize:16}}>Appointment Cancelled</Text>
             {/* <Text>{slot&&date?(`${date}-${slot.time}${slot.meridian}`):(`${new Date().toLocaleDateString()}-${new Date().toLocaleTimeString()}`)}</Text> */}
             <Text style={{color:"grey",fontSize:12,marginLeft:6}}>{formatDate(new Date())}</Text>
@@ -39,7 +45,7 @@ export const CancelAppointmet=({navigation,route})=>{
 
 
         </View>
-        </SafeAreaView>
+        </KeyboardAvoidingView>
     )
 }
 
@@ -73,7 +79,11 @@ export const CancelReason=({navigation,route})=>{
 
 
     return(
-        <View style={{flex:1}}>
+        <KeyboardAvoidingView
+             behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+             style={{ flex: 1 }}
+           >
+          <ScrollView style={{height:"80%"}}>
           <View style={[styles.container,{flexDirection:"row"}]}>
             <Image source={{uri:item.doctorImage}} style={{width:70,height:70,borderRadius:50,marginRight:20}}></Image>
             <View>
@@ -101,6 +111,7 @@ export const CancelReason=({navigation,route})=>{
         />
       ))}
     </View>
+    </ScrollView>
 1   
  <View style={styles.continueContainer}>
                 <TouchableOpacity style={[styles.continueButton,{marginBottom:10}]} onPress={()=>{navigation.navigate('Cancel Appointment',{centerData,item,petName,date,slot})}} >
@@ -111,7 +122,7 @@ export const CancelReason=({navigation,route})=>{
                 </TouchableOpacity>
             </View>
 
-        </View>
+            </KeyboardAvoidingView>
     )
 }
 
@@ -166,8 +177,7 @@ const styles = StyleSheet.create({
 
  
     continueContainer: {
-        position: "absolute",  
-        bottom:50, 
+      
         width: "100%", 
         padding: 20,
         backgroundColor: "#fff",

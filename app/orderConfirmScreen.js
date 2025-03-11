@@ -3,6 +3,8 @@ import React ,{useEffect}from 'react';
 import { View, Text, StyleSheet,Image ,TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import stepBar from './assets/images/stepBar.png'
+import { ScrollView } from 'react-native-gesture-handler';
+import { KeyboardAvoidingView ,Platform} from 'react-native';
 
 const OrderConfirmationScreen = ({navigation}) => {
  useEffect(()=>{
@@ -22,7 +24,12 @@ const OrderConfirmationScreen = ({navigation}) => {
         )
     }
     return (
-        <View style={{flex:1,}}>
+         <KeyboardAvoidingView
+                    behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+                    style={{ flex: 1 }}
+                  >
+        <View style={{flex:1}}>
+          <ScrollView contentContainerStyle={{paddingBottom:100}}> 
         <View style={styles.container}>
         <View style={{height:70,width:70,backgroundColor:"#64867B",borderRadius:50,justifyContent:"center",alignItems:"center"}}>
         <View style={{height:60,width:60,backgroundColor:"#fff",borderRadius:50,justifyContent:"center",alignItems:"center"}}>
@@ -64,7 +71,7 @@ const OrderConfirmationScreen = ({navigation}) => {
         </View>
 
        </View>
-        
+       </ScrollView>
         
     <View style={styles.continueContainer}>      
     <TouchableOpacity style={styles.continueButton}
@@ -72,6 +79,7 @@ const OrderConfirmationScreen = ({navigation}) => {
     </View>
       
         </View>
+        </KeyboardAvoidingView>
       );
 };
 
@@ -118,8 +126,7 @@ const styles = StyleSheet.create({
 
  
     continueContainer: {
-        position: "absolute",  
-        bottom:50, 
+     
         width: "100%", 
         padding: 20,
         backgroundColor: "#fff",
